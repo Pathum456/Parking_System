@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="TableViewFormContext" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: brown;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverTableViewFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="81.0" prefWidth="1000.0" style="-fx-background-color: skyBlue;" text="Drivers Details" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+         <padding>
+            <Insets top="-30.0" />
+         </padding>
+      </Label>
+      <JFXButton alignment="CENTER" layoutX="8.0" layoutY="50.0" onAction="#updateOnAction" prefWidth="90.0" style="-fx-background-color: #c8d6e5;" text="Update" AnchorPane.bottomAnchor="546.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="103.0" layoutY="50.0" onAction="#deleteOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #c8d6e5;" text="Delete" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="938.0" layoutY="48.0" onAction="#closeOnAction" prefWidth="100.0" style="-fx-background-color: #c8d6e5;" text="Close" AnchorPane.bottomAnchor="548.0" AnchorPane.leftAnchor="938.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblDriverDetails" layoutX="8.0" layoutY="101.0" prefHeight="515.0" prefWidth="980.0" style="-fx-background-color: white;" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="101.0">
+        <columns>
+          <TableColumn fx:id="colDName" prefWidth="200.0" text="Name" />
+            <TableColumn fx:id="colDNIC" prefWidth="200.0" text="NIC" />
+            <TableColumn fx:id="colDDrivingLicenseNo" prefWidth="200.0" text="Driving Licence No." />
+            <TableColumn fx:id="colDAddress" prefWidth="200.0" text="Address" />
+            <TableColumn fx:id="colDContactNo" prefWidth="200.0" text="Contact" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

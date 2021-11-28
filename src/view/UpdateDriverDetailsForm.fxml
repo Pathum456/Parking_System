@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateDriverContext" prefHeight="430.0" prefWidth="577.0" style="-fx-background-color: #ced6e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateDriverDetailsFormController">
+   <children>
+      <Label layoutX="5.0" layoutY="178.0" prefHeight="27.0" prefWidth="116.0" text="Driver Name " AnchorPane.leftAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="308.0" prefHeight="27.0" prefWidth="75.0" text="Address" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="244.0" prefHeight="27.0" prefWidth="169.0" text="Driving Licence No." AnchorPane.leftAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="365.0" prefHeight="27.0" prefWidth="106.0" text="Contact No." AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="474.0" layoutY="391.0" onAction="#updateDriverOnAction" prefHeight="34.0" prefWidth="99.0" style="-fx-background-color: #00cec9;" text="Update" />
+      <Label alignment="CENTER" prefHeight="73.0" prefWidth="577.0" style="-fx-background-color: skyblue;" text="UpDate Driver Details" underline="true" AnchorPane.bottomAnchor="357.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="114.0" prefHeight="27.0" prefWidth="99.0" text="Search NIC " AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNICSearchDriver" layoutX="202.0" layoutY="115.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="202.0" />
+      <JFXTextField fx:id="txtDriverNameUpdate" layoutX="202.0" layoutY="179.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="202.0" />
+      <JFXTextField fx:id="txtDrivingLicenseNo" layoutX="202.0" layoutY="245.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="202.0" />
+      <JFXTextField fx:id="txtAddressUpdate" layoutX="226.0" layoutY="309.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="202.0" />
+      <JFXTextField fx:id="txtContactNoUpdate" layoutX="202.0" layoutY="366.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="202.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backContext" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #ced6e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginInFormController">
+   <children>
+      <ImageView fitHeight="118.0" fitWidth="160.0" layoutX="189.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../essarts/admin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="160.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="214.0" text="Password">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+     
+      <JFXButton layoutX="216.0" layoutY="271.0" onAction="#goBackOnAction" text="Cancel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="325.0" layoutY="271.0" onAction="#goLogInOnAction" text="Log In">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="userNameTxt" layoutX="216.0" layoutY="165.0" onAction="#goToPasswordPield" />
+      <JFXPasswordField fx:id="passwordContext" layoutX="216.0" layoutY="219.0" onAction="#gotToLoginButton" />
+   </children>
+</AnchorPane>

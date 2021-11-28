@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="modifyVehicleContext" prefHeight="303.0" prefWidth="619.0" style="-fx-background-color: #ced6e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyVehicleDetailsFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="613.0" style="-fx-background-color: skyblue;" text="UpDate Vehicle Details" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="15.0" layoutY="109.0" prefHeight="27.0" prefWidth="158.0" text="Search Number " AnchorPane.topAnchor="110.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="15.0" layoutY="240.0" prefHeight="27.0" prefWidth="158.0" text="No of passengers">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="15.0" layoutY="176.0" prefHeight="27.0" prefWidth="158.0" text="Maximum Weight">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="376.0" layoutY="107.0" prefHeight="27.0" prefWidth="118.0" text="Vehicle type " AnchorPane.topAnchor="110.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="searchVehicleNumberTxt" layoutX="211.0" layoutY="110.0" style="-fx-background-color: #ced6e0;" AnchorPane.topAnchor="110.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="maximumNewWeightContext" layoutX="211.0" layoutY="177.0" style="-fx-background-color: #ced6e0;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="noOfNewPassengersContext" layoutX="211.0" layoutY="241.0" style="-fx-background-color: #ced6e0;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXComboBox fx:id="vehicleNewTypeContext" layoutX="501.0" layoutY="109.0" prefHeight="25.0" prefWidth="118.0" AnchorPane.topAnchor="110.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton layoutX="501.0" layoutY="255.0" onAction="#modifyVehicleOnAction" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #d1ccc0;" text="Modify" />
+   </children>
+</AnchorPane>

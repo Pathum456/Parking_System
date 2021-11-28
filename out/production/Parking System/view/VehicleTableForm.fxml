@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="vehicleTableContext" prefHeight="612.0" prefWidth="1002.0" style="-fx-background-color: brown;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VehicleTableFormController">
+   <children>
+      <Label layoutX="20.0" layoutY="18.0" prefHeight="102.0" prefWidth="1049.0" style="-fx-background-color: skyblue;" AnchorPane.bottomAnchor="515.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="404.0" layoutY="6.0" prefHeight="70.0" prefWidth="343.0" text="Vehicle Details" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutY="70.0" mnemonicParsing="false" onAction="#deleteVehicleOnAction" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #c8d6e5;" text="Delete" AnchorPane.bottomAnchor="516.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="945.0" layoutY="70.0" mnemonicParsing="false" onAction="#closeVehicleWindowOnAction" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #c8d6e5;" text="Close" AnchorPane.bottomAnchor="517.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableVehiclesContext" layoutX="9.0" layoutY="113.0" prefHeight="493.0" prefWidth="1033.0" style="-fx-background-color: white;" tableMenuButtonVisible="true" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="113.0">
+         <columns>
+            <TableColumn fx:id="vehicleNoContext" prefWidth="250.0" text="Vehicle NO." />
+            <TableColumn fx:id="vehicleTypeContext" prefWidth="250.0" text="Vehicle Type" />
+            <TableColumn fx:id="maximumWeightContext" prefWidth="250.0" text="Maximum Weight" />
+            <TableColumn fx:id="NoOfPassengersContext" prefWidth="250.0" text="No Of Passengers" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

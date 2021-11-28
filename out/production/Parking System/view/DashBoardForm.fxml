@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homeCheckContext" accessibleRole="TEXT" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to right , #ffffff,#000000);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@../essarts/g4.jpeg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="141.0" text="Select Vehicle">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="294.0" prefHeight="50.0" prefWidth="118.0" text="Driver">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSelectVehicleContext" layoutX="247.0" layoutY="150.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <JFXButton fx:id="parkedVehicle" layoutX="751.0" layoutY="219.0" onAction="#parkingSlotOnAction" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #95a5a6;" text="Park Vehicle">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="deliveryVehicle" layoutX="751.0" layoutY="295.0" onAction="#deliveryOnAction" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #bdc3c7;" text="On Delivery Shift">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="oneClickContext" layoutX="751.0" layoutY="467.0" onAction="#managmentLoginOnAction" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #95afc0;" text="Managment Log In ">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="slotTxt" alignment="CENTER" editable="false" layoutX="151.0" layoutY="411.0" prefHeight="112.0" prefWidth="196.0" style="-fx-background-color: #bdc3c7;">
+         <font>
+            <Font size="64.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="96.0" layoutY="404.0" prefHeight="38.0" prefWidth="303.0" text="Your Parking Slot" textFill="#240101">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="59.0" prefWidth="1000.0" text="Saman Rice Company Parking System" textFill="#1b1464" underline="true" AnchorPane.bottomAnchor="541.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="driverContext" layoutX="249.0" layoutY="302.0" prefHeight="25.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="11.0" layoutY="213.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateTimeContext" editable="false" layoutX="744.0" layoutY="105.0" prefHeight="91.0" prefWidth="235.0" style="-fx-background-color: black; -fx-text-inner-color: white;" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="dateContext" editable="false" layoutX="745.0" layoutY="105.0" prefHeight="29.0" prefWidth="152.0" style="-fx-background-color: black; -fx-text-inner-color: white;" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TextField>
+      <Button layoutX="906.0" layoutY="557.0" mnemonicParsing="false" onAction="#refreshOnAction" style="-fx-background-color: #95afc0;" text="refresh" />
+      <JFXTextField fx:id="textContext" alignment="CENTER" editable="false" layoutX="247.0" layoutY="226.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+   </children>
+</AnchorPane>

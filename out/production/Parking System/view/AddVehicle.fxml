@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleContext" prefHeight="300.0" prefWidth="608.0" style="-fx-background-color: #ced6e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleController">
+   <children>
+      <Label alignment="TOP_RIGHT" layoutX="4.0" layoutY="91.0" prefHeight="27.0" prefWidth="158.0" text="Vehicle Number ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="5.0" layoutY="238.0" prefHeight="27.0" prefWidth="158.0" text="No of passengers">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="5.0" layoutY="167.0" prefHeight="27.0" prefWidth="158.0" text="Maximum Weight">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="366.0" layoutY="91.0" prefHeight="27.0" prefWidth="118.0" text="Vehicle type ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="vehicleTypeContext" layoutX="491.0" layoutY="93.0" prefHeight="25.0" prefWidth="118.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton layoutX="500.0" layoutY="239.0" onAction="#saveVehicleOnAction" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #d1ccc0;" text="Add Vehicle" />
+      <Label alignment="CENTER" layoutX="199.0" layoutY="24.0" style="-fx-background-color: #02CBC4;" text="Add Vehicle" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="vehicleNumberContext" layoutX="193.0" layoutY="93.0" />
+      <JFXTextField fx:id="maximumWeightContext" layoutX="193.0" layoutY="168.0" />
+      <JFXTextField fx:id="noOfPassengersContext" layoutX="193.0" layoutY="239.0" />
+   </children>
+</AnchorPane>
